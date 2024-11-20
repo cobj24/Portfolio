@@ -1,3 +1,4 @@
+
 *,
 *::before,
 *::after {
@@ -37,7 +38,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: "Playfair Display", serif;
     font-size: 16px;
     line-height: 1.6;
     color: #313131;
@@ -121,16 +122,13 @@ body {
     transition: transform 0.3s ease;
 }
 
-
 .footer .social .fa-github {
     font-size: 3rem;
 }
 
-
 .footer .social i:hover {
     transform: scale(1.1);
 }
-
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
@@ -169,28 +167,15 @@ img {
     object-fit: cover;
 }
 
-body {
-    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-}
-
 :root {
     --primary-color: #0b93e1;
     --secondary-color: #444;
     --tertiary-color: #f8f8f8;
     --accent-color: #0b93e1;
+    --background-color: #fff;
+    --link-hover-color: #0b93e1;
+    --link-focus-color: #0b93e1;
 }
-
-a {
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-a:hover,
-a:focus {
-    color: var(--accent-color);
-    text-decoration: underline;
-}
-
 
 .footer a {
     transition: color 0.3s ease, transform 0.3s ease;
@@ -202,10 +187,10 @@ a:focus {
 }
 
 .card {
+    background-color: var(--background-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 1rem;
     border-radius: 8px;
-    background-color: #fff;
     transition: box-shadow 0.3s ease;
 }
 
