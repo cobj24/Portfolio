@@ -1,4 +1,3 @@
-
 *,
 *::before,
 *::after {
@@ -177,51 +176,62 @@ img {
   }
 }
 
-
-.main {
+.technology {
   display: flex;
-  gap: 20px;
-  padding: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  padding: 10px;
+  flex-wrap: wrap;
 }
 
-.menu {
-  flex: 1;
-  background-color: #eee8ff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+.technology .article {
+  width: 70%;
+  background-color: #fff;
   border-radius: 8px;
-  height: 100%;
 }
 
-.menu h2 {
-  margin-top: 0;
+.technology .menu {
+  background-color: #ebd8f9;
+  width: 20%;
+  height: 300x;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px;
 }
 
-.menu p {
-  margin-bottom: 10px;
-}
-
-.menu a {
+.technology .menu a {
+  display: block;
+  padding: 10px 0;
+  margin-bottom: 5px;
   text-decoration: none;
   color: #333;
-  font-size: 1.2rem;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.menu a:hover {
-  background-color: #d5c3e7;
+.technology .menu a:hover {
   color: #333;
+  transform: scale(1.05);
 }
 
-.article {
-  flex: 3;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-@media (max-width: 768px) {
-  .main {
+@media (max-width: 1024px) {
+  .technology {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .technology .article,
+  .technology .menu {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .technology .article {
+    order: 1;
+  }
+
+  .technology .menu {
+    order: 2;
   }
 }
