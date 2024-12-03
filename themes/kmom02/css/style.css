@@ -6464,6 +6464,207 @@ pre code {
   line-height: 1.4;
 }
 
+/* Landing Page */
+.landingpage {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.landingpage .box:last-child {
+  margin-bottom: 20px;
+}
+
+.landingpage h1 {
+  grid-column: span 3;
+  justify-self: center;
+  text-align: center;
+  font-size: 2em;
+}
+
+.read-more-button {
+  display: inline-block;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+.landingpage .box {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100px;
+}
+
+.landingpage .box.css {
+  background-color: #5775ed;
+  color: white;
+}
+
+.landingpage .box.html {
+  background-color: #f82323;
+  color: white;
+}
+
+.landingpage .box.javascript {
+  background-color: #f7de3e;
+  color: white;
+}
+
+.landingpage .box.php {
+  background-color: #545b7b;
+  color: white;
+}
+
+.landingpage .box.python {
+  background-color: #1bb879;
+  color: white;
+}
+
+.landingpage .box.git {
+  background-color: #f75fe0;
+  color: white;
+}
+
+.landingpage .box.sqlite {
+  background-color: #8b2ce4;
+  color: white;
+}
+
+.landingpage .box h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Technology Page */
+.technology-page {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 2em;
+  margin-top: 20px;
+}
+
+.sidebar {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  font-size: 1.4em;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #264de4;
+  font-weight: bold;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.content-body {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Media Queries for Responsiveness */
+/* For small screens like mobile */
+@media (max-width: 768px) {
+  /* Landing Page */
+  .landingpage {
+    grid-template-columns: 1fr; /* Stack all boxes in a single column */
+  }
+  .landingpage h1 {
+    font-size: 1.5em; /* Adjust title font size */
+  }
+  .landingpage .box {
+    padding: 15px; /* Reduce padding for smaller screens */
+    margin-bottom: 1em; /* Add space between boxes */
+  }
+  .landingpage .box h2 {
+    font-size: 1em; /* Adjust subtitle size for smaller screens */
+  }
+  /* Technology Page */
+  .technology-page {
+    grid-template-columns: 1fr; /* Stack sidebar and content vertically */
+    gap: 1em; /* Reduce gap between items */
+  }
+  .sidebar {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+  .sidebar h3 {
+    font-size: 1.2em; /* Adjust sidebar title font size */
+  }
+  .content h1 {
+    font-size: 1.8em; /* Adjust content title font size */
+  }
+  .content-body {
+    font-size: 1em; /* Adjust body text size */
+  }
+  .read-more-button {
+    padding: 8px 15px; /* Adjust button size */
+    font-size: 0.9em; /* Adjust font size of the button */
+  }
+}
+/* For even smaller screens (e.g., phones in portrait mode) */
+@media (max-width: 480px) {
+  .landingpage h1 {
+    font-size: 1.3em; /* Further reduce title size */
+  }
+  .landingpage .box {
+    padding: 10px; /* Further reduce box padding */
+  }
+  .landingpage .box h2 {
+    font-size: 0.9em; /* Further reduce subtitle size */
+  }
+  .sidebar h3 {
+    font-size: 1.1em; /* Further reduce sidebar title size */
+  }
+  .content h1 {
+    font-size: 1.6em; /* Further reduce content title font size */
+  }
+  .content-body {
+    font-size: 0.9em; /* Further reduce body text size */
+  }
+  .read-more-button {
+    padding: 6px 12px; /* Further reduce button size */
+    font-size: 0.8em; /* Further reduce button font size */
+  }
+}
 *,
 *::before,
 *::after {
@@ -6548,7 +6749,7 @@ body .main {
   transition: color 0.3s ease;
 }
 .footer a:hover {
-  color: #407bc0;
+  color: #121212;
 }
 
 .footer .social {
@@ -6594,17 +6795,17 @@ dd {
 
 a {
   font-weight: bolder;
-  color: #407bc0;
+  color: #121212;
   text-decoration: none;
   transition: color 0.3s ease, transform 0.2s ease;
 }
 a:hover, a:focus {
-  color: #407bc0;
+  color: #121212;
   text-decoration: underline;
   transform: scale(1.05);
 }
 a:focus {
-  outline: 2px solid #407bc0;
+  outline: 2px solid #121212;
 }
 
 img {
@@ -6632,4 +6833,52 @@ img {
 }
 .card:hover {
   box-shadow: 0 8px 16px #407bc0;
+}
+
+.main {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.menu {
+  flex: 1;
+  background-color: #eee8ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.menu h2 {
+  margin-top: 0;
+}
+
+.menu p {
+  margin-bottom: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: #d5c3e7;
+  color: #000000;
+}
+
+.article {
+  flex: 3;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
 }

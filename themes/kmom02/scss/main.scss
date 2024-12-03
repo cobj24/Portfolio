@@ -1,0 +1,227 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  background: transparent;
+  font-family: inherit;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+ol,
+ul {
+  padding-left: 1.5em;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: $font-color;
+
+  .main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+    flex: 1 0 auto;
+  }
+}
+
+.header {
+  background-color: $background-alternative-color;
+  border-bottom: 2px solid $border;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  padding: 0 15px;
+}
+
+.header .site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.footer {
+  background-color: $background-alternative-color;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  border-top: 2px solid $border;
+}
+  
+.footer a {
+  color: $font-color;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $hover;
+  }
+}
+  
+.footer .social {
+  font-size: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+  
+.footer .social i {
+  font-size: 3rem;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.footer .social .fa-github {
+  font-size: 3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: $font-color;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  line-height: 1.2;
+}
+
+p,
+td,
+th,
+li,
+dd {
+  text-align: justify;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+a {
+  font-weight: bolder;
+  color: $hover;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+
+  &:hover,
+  &:focus {
+    color: $hover;
+    text-decoration: underline;
+    transform: scale(1.05);
+  }
+
+  &:focus {
+    outline: 2px solid $hover;
+  }
+}
+
+img {
+  max-width: 18%;
+  height: auto;
+  object-fit: cover;
+}
+
+:root {
+  --primary-color: $hover;
+  --secondary-color: $font-color;
+  --tertiary-color: $other-color;
+  --accent-color: $hover;
+  --background-color: $background-color;
+  --link-hover-color: $hover;
+  --link-focus-color: $hover;
+}
+
+.card {
+  background-color: var(--background-color);
+  box-shadow: 0 4px 8px $border;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 8px 16px $border;
+  }
+}
+
+
+.main {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.menu {
+  flex: 1;
+  background-color: #eee8ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.menu h2 {
+  margin-top: 0;
+}
+
+.menu p {
+  margin-bottom: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: #d5c3e7;
+  color: #333;
+}
+
+.article {
+  flex: 3;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+}

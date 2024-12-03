@@ -1,0 +1,123 @@
+/* Landing Page */
+.landingpage {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.landingpage .box:last-child {
+  margin-bottom: 20px;
+}
+
+.landingpage h1 {
+  grid-column: span 3;
+  justify-self: center;
+  text-align: center;
+  font-size: 2em;
+}
+
+.read-more-button {
+  display: inline-block;
+  color: #f0f0f0;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+.landingpage .box {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100px;
+}
+
+.landingpage .box.css {
+  background-color: #5775ed;
+  color: #f0f0f0;
+}
+
+.landingpage .box.html {
+  background-color: #f82323;
+  color: #f0f0f0;
+}
+
+.landingpage .box.javascript {
+  background-color: #f7de3e;
+  color: #f0f0f0;
+}
+
+.landingpage .box.php {
+  background-color: #545b7b;
+  color: #f0f0f0;
+}
+
+.landingpage .box.python {
+  background-color: #1bb879;
+  color: #f0f0f0;
+}
+
+.landingpage .box.git {
+  background-color: #f75fe0;
+  color: #f0f0f0;
+}
+
+.landingpage .box.sqlite {
+  background-color: #8b2ce4;
+  color: #f0f0f0;
+}
+
+.landingpage .box h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .landingpage {
+    grid-template-columns: 1fr;
+  }
+
+  .landingpage h1 {
+    font-size: 1.5em;
+  }
+
+  .landingpage .box {
+    padding: 15px;
+    margin-bottom: 1em;
+  }
+
+  .landingpage .box h2 {
+    font-size: 1em;
+  }
+
+  .read-more-button {
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .landingpage h1 {
+    font-size: 1.3em;
+  }
+
+  .landingpage .box {
+    padding: 10px;
+  }
+
+  .landingpage .box h2 {
+    font-size: 0.9em;
+  }
+
+  .read-more-button {
+    padding: 6px 12px;
+    font-size: 0.8em;
+  }
+}

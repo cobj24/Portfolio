@@ -1,0 +1,23 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">
+        <div class="landingpage">
+            {{ content }}
+
+            {% for tech in meta.techs %}
+                <div class="box {{ tech.class }}" style="grid-column: span {{ tech.span | default(1) }}">
+                    <h2>{{ tech.name }}</h2>
+                    <a href="{{ base.url }}/dbwebb/design/me/portfolio{{ tech.url }}" class="read-more-button">Läs mer!</a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>
+
