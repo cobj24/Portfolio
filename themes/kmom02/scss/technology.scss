@@ -17,7 +17,7 @@
 
 .read-more-button {
   display: inline-block;
-  color: #f0f0f0;
+  color: $font-color;
   padding: 10px 20px;
   margin-top: 15px;
   border-radius: 5px;
@@ -27,7 +27,7 @@
 }
 
 .landingpage .box {
-  background-color: #f0f0f0;
+  background-color: $background-color;
   padding: 20px;
   text-align: center;
   border-radius: 8px;
@@ -39,38 +39,38 @@
 }
 
 .landingpage .box.css {
-  background-color: #5775ed;
-  color: #f0f0f0;
+  background-color: $css-box;
+  color: $font-color;
 }
 
 .landingpage .box.html {
-  background-color: #f82323;
-  color: #f0f0f0;
+  background-color: $html-box;
+  color: $font-color;
 }
 
 .landingpage .box.javascript {
-  background-color: #f7de3e;
-  color: #f0f0f0;
+  background-color: $javascript-box;
+  color: $font-color;
 }
 
 .landingpage .box.php {
-  background-color: #545b7b;
-  color: #f0f0f0;
+  background-color: $php-box;
+  color: $font-color;
 }
 
 .landingpage .box.python {
-  background-color: #1bb879;
-  color: #f0f0f0;
+  background-color: $python-box;
+  color: $font-color;
 }
 
 .landingpage .box.git {
-  background-color: #f75fe0;
-  color: #f0f0f0;
+  background-color: $git-box;
+  color: $font-color;
 }
 
 .landingpage .box.sqlite {
-  background-color: #8b2ce4;
-  color: #f0f0f0;
+  background-color: $sqlite-box;
+  color: $font-color;
 }
 
 .landingpage .box h2 {

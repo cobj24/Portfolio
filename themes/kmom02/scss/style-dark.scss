@@ -7,15 +7,16 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/regular';
 
 @import '../../node_modules/normalize.css/normalize';
-@import 'variables';
+@import 'variables-dark';
 
 @import 'typography';
 
 @import 'blockquotes';
 @import 'code';
 
-
 @import 'technology';
 @import 'rapport';
+
 @import 'main';
+
 @import 'gallery';

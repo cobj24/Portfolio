@@ -37,12 +37,14 @@ body {
 }
 
 body {
+  background-color: $background-color;
   display: flex;
   flex-direction: column;
   font-size: 16px;
   color: $font-color;
 
   .main {
+    color: $font-color;
     max-width: 800px;
     margin: 0 auto;
     padding: 0 15px;
@@ -61,12 +63,14 @@ body {
 }
 
 .header .site-header {
+  color: $font-color;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .title {
+  color: $font-color;
   text-align: center;
 }
 
@@ -148,10 +152,9 @@ a {
   }
 }
 
-img {
-  max-width: 18%;
+.mig {
+  width: 200px;
   height: auto;
-  object-fit: cover;
 }
 
 :root {
@@ -187,16 +190,16 @@ img {
 
 .technology .article {
   width: 70%;
-  background-color: #fff;
+  background-color: $background-color;
   border-radius: 8px;
 }
 
 .technology .menu {
-  background-color: #ebd8f9;
+  background-color: $background-color;
   width: 20%;
   height: 300x;
   border-radius: 5px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px $box-shadow;
   padding: 15px;
 }
 
@@ -205,13 +208,13 @@ img {
   padding: 10px 0;
   margin-bottom: 5px;
   text-decoration: none;
-  color: #333;
+  color: $background-alternative-color;
   font-size: 1.1rem;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .technology .menu a:hover {
-  color: #333;
+  color: $background-alternative-color;
   transform: scale(1.05);
 }
 
